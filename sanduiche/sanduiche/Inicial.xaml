@@ -1,12 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="sanduiche.Inicial">
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="sanduiche.Inicial"
+             BackgroundColor="#3E474C"
+             Title="App Guia do Curso de DS">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Label Text="Ola! Este é um app guia para o curso de desenvolvimento de sistemas" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="White" />
+
+                <Label Text="O curso é separado em três anos" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="White" />
+
+                <Image Source="logo_ds"/>
+                
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
