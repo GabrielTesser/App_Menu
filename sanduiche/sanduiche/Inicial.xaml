@@ -8,15 +8,32 @@
              BackgroundColor="#3E474C"
              Title="App Guia do Curso de DS">
     <ContentPage.Content>
-        <ScrollView>
-            <StackLayout Padding="10">
-                <Label Text="Ola! Este é um app guia para o curso de desenvolvimento de sistemas" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="White" />
 
-                <Label Text="O curso é separado em três anos" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="White" />
+        <StackLayout Padding="10">
+            
+                <Frame Scale="0.7" CornerRadius="10">
+                    <StackLayout>
+                        <Image x:Name="logo_etec"/>
+                    </StackLayout>
+                </Frame>
 
-                <Image Source="logo_ds"/>
-                
-            </StackLayout>
-        </ScrollView>
+            <Frame Scale="0.9" CornerRadius="10">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Ola! Este é um app guia para o curso de desenvolvimento de sistemas" FontSize="Title" HorizontalTextAlignment="Center" TextColor="#3E474C" />
+
+                    <Frame CornerRadius="10" BackgroundColor="#3E474C">
+                        <StackLayout>
+                            <Image x:Name="logo_ds" Aspect="AspectFill"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Label Text="O curso é separado em três anos" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="#3E474C" />
+                    
+                    <Label Text="Desenvolvido por Gabriel Tesser" Padding="0,20,0,0" TextColor="#3E474C" HorizontalTextAlignment="End" FontSize="Micro"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        
+  
     </ContentPage.Content>
 </ContentPage>

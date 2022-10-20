@@ -11,14 +11,27 @@
         
         <ScrollView>
             <StackLayout>
+                <Frame Scale="0.7" CornerRadius="10">
+                    <StackLayout>
+                        <Image x:Name="logo_etec"/>
+                    </StackLayout>
+                </Frame>
 
-                <Button Text="Analize de Sistemas" Clicked="Button_Clicked" Style="{StaticResource BotaoVermelho}"/>
-                <Button Text="Banco de Dados I" Clicked="Button_Clicked_1" Style="{StaticResource BotaoVermelho}"/>
-                <Button Text="Design Digital" Clicked="Button_Clicked_2" Style="{StaticResource BotaoVermelho}"/>
-                <Button Text="Fundamentos da Informatica" Clicked="Button_Clicked_3" Style="{StaticResource BotaoVermelho}"/>
-                <Button Text="Programação de Algoritimo" Clicked="Button_Clicked_4" Style="{StaticResource BotaoVermelho}"/>
-                <Button Text="Programação Web" Clicked="Button_Clicked_5" Style="{StaticResource BotaoVermelho}"/>
+                <Frame CornerRadius="10" ScaleX="0.9">
+                    <StackLayout>
 
+                        <Label Text="DISCIPLINAS" TextColor="#3E474C" FontSize="32.5" HorizontalTextAlignment="Center"/>
+
+                        <Button Text="Analise de Sistemas" Clicked="Button_Clicked" Style="{StaticResource BotaoVermelho}"  CornerRadius="10" Scale="0.9"/>
+                        <Button Text="Banco de Dados I" Clicked="Button_Clicked_1" Style="{StaticResource BotaoVermelho}"  CornerRadius="10" Scale="0.9"/>
+                        <Button Text="Design Digital" Clicked="Button_Clicked_2" Style="{StaticResource BotaoVermelho}"  CornerRadius="10" Scale="0.9"/>
+                        <Button Text="Fundamentos da Informatica" Clicked="Button_Clicked_3" Style="{StaticResource BotaoVermelho}"  CornerRadius="10" Scale="0.9"/>
+                        <Button Text="Programação de Algoritimo" Clicked="Button_Clicked_4" Style="{StaticResource BotaoVermelho}"  CornerRadius="10" Scale="0.9"/>
+                        <Button Text="Programação Web" Clicked="Button_Clicked_5" Style="{StaticResource BotaoVermelho}"  CornerRadius="10" Scale="0.9"/>
+                        <Label Text="Desenvolvido por Gabriel Tesser" Padding="0,20,0,0" TextColor="#3E474C" HorizontalTextAlignment="End" FontSize="Micro"/>
+                    </StackLayout>
+                </Frame>
+                
             </StackLayout>
         </ScrollView>
         

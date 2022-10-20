@@ -15,6 +15,19 @@ namespace sanduiche.Views
         public Vestibulinho()
         {
             InitializeComponent();
+            logo_etec.Source = ImageSource.FromResource("sanduiche.imagens.etec-2022.png");
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            try 
+            {
+                Device.OpenUri(new Uri("http://www.etecjau.com.br/etecjau/"));
+            }
+            catch(Exception ex)
+            {
+                await DisplayAlert("ops!", ex.Message, "OK");
+            }
         }
     }
 }

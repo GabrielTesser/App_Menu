@@ -1,12 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="sanduiche.Views.Segundo">
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="sanduiche.Views.Segundo"
+             BackgroundColor="#3E474C"
+             Title="Diciplinas do Segundo Ano">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Frame Scale="0.7" CornerRadius="10">
+                    <StackLayout>
+                        <Image x:Name="logo_etec"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame CornerRadius="10" ScaleX="0.9">
+                    <StackLayout>
+
+                        <Label Text="DISCIPLINAS" TextColor="#3E474C" FontSize="32.5" HorizontalTextAlignment="Center"/>
+
+                        <Button Text="Banco de Dados II" Clicked="Button_Clicked" Style="{StaticResource BotaoVermelho}"  CornerRadius="10" Scale="0.9"/>
+                        <Button Text="Desenvolvimento de Sistemas" Clicked="Button_Clicked_1" Style="{StaticResource BotaoVermelho}"  CornerRadius="10" Scale="0.9"/>
+                        <Button Text="Ética" Clicked="Button_Clicked_2" Style="{StaticResource BotaoVermelho}"  CornerRadius="10" Scale="0.9"/>
+                        <Button Text="Programação Mobile" Clicked="Button_Clicked_3" Style="{StaticResource BotaoVermelho}"  CornerRadius="10" Scale="0.9"/>
+                        <Button Text="Programação Web II" Clicked="Button_Clicked_4" Style="{StaticResource BotaoVermelho}"  CornerRadius="10" Scale="0.9"/>
+                        <Button Text="Sistemas Embarcados" Clicked="Button_Clicked_5" Style="{StaticResource BotaoVermelho}"  CornerRadius="10" Scale="0.9"/>
+                        <Label Text="Desenvolvido por Gabriel Tesser" Padding="0,20,0,0" TextColor="#3E474C" HorizontalTextAlignment="End" FontSize="Micro"/>
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

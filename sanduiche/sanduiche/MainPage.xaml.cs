@@ -16,6 +16,8 @@ namespace sanduiche
         {
             InitializeComponent();
             Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(Inicial)));
+
+            logo_etec.Source = ImageSource.FromResource("sanduiche.imagens.etec-2022.png");
         }
 
         private async void Open_Inicial(object sender, EventArgs e)

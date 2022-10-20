@@ -15,6 +15,7 @@ namespace sanduiche.Views
         public Contato()
         {
             InitializeComponent();
+            logo_etec.Source = ImageSource.FromResource("sanduiche.imagens.etec-2022.png");
         }
     }
 }

@@ -12,9 +12,11 @@ namespace sanduiche.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class VerComponente : ContentPage
     {
-        public VerComponente()
+        public VerComponente(Models.Componente c)
         {
             InitializeComponent();
+            logo_etec.Source = ImageSource.FromResource("sanduiche.imagens.etec-2022.png");
+            BindingContext = c;
         }
     }
 }

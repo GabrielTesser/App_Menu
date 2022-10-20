@@ -1,12 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="sanduiche.Views.VerComponente">
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="sanduiche.Views.VerComponente"
+             BackgroundColor="#3E474C"
+             Title="Detalhes de Componenete">
+            
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+
+            <StackLayout>
+
+                <Frame Scale="0.8" CornerRadius="10">
+                    <Image x:Name="logo_etec"/>
+                </Frame>
+
+                <Frame Scale="0.9" CornerRadius="10">
+                    <StackLayout VerticalOptions="Center" Padding="20">
+                        <Label Text="{Binding Nome}" HorizontalTextAlignment="Center" FontAttributes="Bold" Margin="0, 0, 0, 30"
+                               TextColor="#AB0209" FontSize="Title"/>
+
+                        <Label Text="Atribuição de responsabilidade" HorizontalTextAlignment="Center" FontAttributes="Bold" Margin="0, 0, 0, 30"
+                               TextColor="#AB0209" FontSize="Large"/>
+
+                        <Label Text="{Binding AtribuicaoRespobilidade}" HorizontalTextAlignment="Center" FontAttributes="Bold" Margin="0, 0, 0, 30"
+                               TextColor="#3E474C" FontSize="Medium"/>
+
+                        <Label Text="Valores e Atitudes" HorizontalTextAlignment="Center" FontAttributes="Bold" Margin="0, 0, 0, 30"
+                               TextColor="#AB0209" FontSize="Large"/>
+
+                        <Label Text="{Binding ValoresAtitudes}" HorizontalTextAlignment="Center" FontAttributes="Bold" Margin="0, 0, 0, 30"
+                               TextColor="#3E474C" FontSize="Medium"/>
+                        
+                        <Label Text="Desenvolvido por Gabriel Tesser" Padding="0,20,0,0" TextColor="#3E474C" HorizontalTextAlignment="End" FontSize="Micro"/>
+                    </StackLayout>
+
+                </Frame>
+
+            </StackLayout>
+
+        </ScrollView>
+            
     </ContentPage.Content>
 </ContentPage>

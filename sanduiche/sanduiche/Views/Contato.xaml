@@ -1,12 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="sanduiche.Views.Contato">
+             x:Class="sanduiche.Views.Contato"
+             BackgroundColor="#3E474C"
+             Title="Contato">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+    <StackLayout>
+
+            <Frame Scale="0.8" CornerRadius="10">
+                <Image x:Name="logo_etec"/>
+            </Frame>
+        <Frame Scale="0.9" CornerRadius="10">
+            <StackLayout >
+                <Label Text="ETEC Joaquim Ferreira do Amaral" TextColor="#3E474C" FontSize="Title" HorizontalTextAlignment="Center" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+                    <Label Text="R. Humaitá, 1090 - Centro - CEP: 17201-320 - Jaú/SP" TextColor="#3E474C" HorizontalTextAlignment="Center" FontSize="Medium"/>
+
+                    <Label Text=" (14) 3622-3566 / 3624-8585" TextColor="#3E474C" HorizontalOptions="Center" FontSize="Medium"/>
+
+                    <Label Text="e070dir@cps.sp.gov.br" HorizontalOptions="CenterAndExpand" TextColor="#3E474C" FontSize="Medium"/>
+
+                <Label Text="Desenvolvido por Gabriel Tesser" Padding="0,20,0,0" TextColor="#3E474C" HorizontalTextAlignment="End" FontSize="Micro"/>
+
+             </StackLayout>
+        </Frame>
+    </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>

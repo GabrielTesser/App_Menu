@@ -17,6 +17,7 @@ namespace sanduiche.Views
         public Primeiro()
         {
             InitializeComponent();
+            logo_etec.Source = ImageSource.FromResource("sanduiche.imagens.etec-2022.png");
         }
 
         private async void Button_Clicked(object sender, EventArgs e)
@@ -25,10 +26,11 @@ namespace sanduiche.Views
             {
                 var c = new Componente
                 {
-                    Nome = "Analize de Sistemas",
-                    AtribuicaoRespobilidade = "Análise de sistemas é a atividade que tem como finalidade a realização de estudos de processos a fim de encontrar o melhor caminho racional para que a informação possa ser processada. Os analistas de sistemas estudam os diversos sistemas existentes entre hardwares, softwares e o usuário final.",
+                    Nome = "Analise de Sistemas",
+                    AtribuicaoRespobilidade = "Elabora Projetos de Sistema de Informatica",
                     ValoresAtitudes = "Estimular a Organização, * Incentivar a Criatividade, * Fortalecer a Percistencia e o Interesse por Situações Problemas",
                 };
+                await Navigation.PushAsync(new VerComponente(c));
             }
             catch (Exception ex)
             {
@@ -37,29 +39,98 @@ namespace sanduiche.Views
 
         }
 
-        private void Button_Clicked_1(object sender, EventArgs e)
+        private async void Button_Clicked_1(object sender, EventArgs e)
         {
+            try
+            {
+                var c = new Componente
+                {
+                    Nome = "Banco de Dados I",
+                    AtribuicaoRespobilidade = "Modelar Banco de Dados",
+                    ValoresAtitudes = "Estimular a Organização, * Fortalecer a Percistencia e o Interesse por Situações Problemas, * Promover Ações que Considerem o Respeito as Normas Estabelecidas",
+                };
+                await Navigation.PushAsync(new VerComponente(c));
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("OPS!", ex.Message, "OK");
+            }
 
         }
 
-        private void Button_Clicked_2(object sender, EventArgs e)
+        private async void Button_Clicked_2(object sender, EventArgs e)
         {
+            try
+            {
+                var c = new Componente
+                {
+                    Nome = "Design Digital",
+                    AtribuicaoRespobilidade = "Desenvolver Elementos Gráficos para Aplicativos e Sites",
+                    ValoresAtitudes = " Incentivar a Criatividade, * Respeitar Manifestações Culturais de Outros Povos, * Incentivar Acções que Promovam a Cooperação",
+                };
+                await Navigation.PushAsync(new VerComponente(c));
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("OPS!", ex.Message, "OK");
+            }
 
         }
 
-        private void Button_Clicked_3(object sender, EventArgs e)
+        private async void Button_Clicked_3(object sender, EventArgs e)
         {
+            try
+            {
+                var c = new Componente
+                {
+                    Nome = "Fundamentos da Informatica",
+                    AtribuicaoRespobilidade = "Operara Sistemas Computacionais",
+                    ValoresAtitudes = "Desenvolver a Criticidade, * Incentivar Comportamatos Éticos, * Promover Ações que Considerem o Respeito as Normas Estabelecidas",
+                };
+                await Navigation.PushAsync(new VerComponente(c));
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("OPS!", ex.Message, "OK");
+            }
 
         }
 
-        private void Button_Clicked_4(object sender, EventArgs e)
+        private async void Button_Clicked_4(object sender, EventArgs e)
         {
+            try
+            {
+                var c = new Componente
+                {
+                    Nome = "Programação Web I",
+                    AtribuicaoRespobilidade = "Desenvolver Sites para Web",
+                    ValoresAtitudes = "Incentivar a Criatividade,*Estimular a Organização, * Fortalecer a Percistencia e o Interesse por Situações Problemas",
+                };
+                await Navigation.PushAsync(new VerComponente(c));
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("OPS!", ex.Message, "OK");
+            }
 
         }
 
-        private void Button_Clicked_5(object sender, EventArgs e)
+        private async void Button_Clicked_5(object sender, EventArgs e)
         {
-
+            try
+            {
+                var c = new Componente
+                {
+                    Nome = "Programação de Algoritimo ",
+                    AtribuicaoRespobilidade = "Implementar Algoritimos em Liguagem de Programação, Utilizando Ambiente de Desenvolvimento de Acordo com Necessidade ",
+                    ValoresAtitudes = "Estimular a Organização, * Incentivar Atitudes Autonomas, * Fortalecer a Percistencia e o Interesse por Situações Problemas",
+                };
+                await Navigation.PushAsync(new VerComponente(c));
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("OPS!", ex.Message, "OK");
+            }
         }
     }
 }

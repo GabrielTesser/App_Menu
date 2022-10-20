@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="sanduiche.MainPage">
+             x:Class="sanduiche.MainPage"
+             >
 
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
@@ -10,14 +11,14 @@
                     <RowDefinition Height="160"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <StackLayout Grid.Row="0" BackgroundColor="#F3F2F0" Padding="10" Margin="10" HorizontalOptions="FillAndExpand">
-                    <Image Source="logo_etec" Aspect="AspectFill"/>
+                <StackLayout Grid.Row="0" BackgroundColor="White" Padding="10" Margin="10" HorizontalOptions="FillAndExpand">
+                    <Image x:Name="logo_etec" Scale="0.85" Aspect="AspectFill"/>
                 </StackLayout>
 
                 <StackLayout Grid.Row="1" Spacing="10" Margin="10" Padding="10" BackgroundColor="#F3F2F0">
                     <Button Text="Inicial" Clicked="Open_Inicial" Style="{StaticResource BotaoVermelho}"/>
                     <Button Text="Primeiro" Clicked="Open_Primeiro" Style="{StaticResource BotaoCinza}"/>
-                    <Button Text="Sugundo" Clicked="Open_Segundo" Style="{StaticResource BotaoCinza}"/>
+                    <Button Text="Segundo" Clicked="Open_Segundo" Style="{StaticResource BotaoCinza}"/>
                     <Button Text="Terceiro" Clicked="Open_Terceiro" Style="{StaticResource BotaoCinza}"/>
                     <Button Text="Vestibulinho" Clicked="Open_Vestibulinho" Style="{StaticResource BotaoVermelho}"/>
                     <Button Text="Contato" Clicked="Open_Contato" Style="{StaticResource BotaoVermelho}"/>

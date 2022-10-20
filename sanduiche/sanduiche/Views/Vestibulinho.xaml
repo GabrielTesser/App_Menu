@@ -1,12 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="sanduiche.Views.Vestibulinho">
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="sanduiche.Views.Vestibulinho"
+             BackgroundColor="#3E474C"
+             Title="Vestibulinho">
+    
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Frame CornerRadius="10" Scale="0.8">
+                <StackLayout>
+                    <Image x:Name="logo_etec"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="10" Scale="0.9">
+                <StackLayout>
+                    <Label Text="Fique atento as datas, acesse o site abaixo" FontSize="Title" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+
+                    <Button Text="Site da ETEC Jahu" Style="{StaticResource BotaoVermelho}" Clicked="Button_Clicked"/>
+                    <Label Text="Desenvolvido por Gabriel Tesser" Padding="0,20,0,0" TextColor="#3E474C" HorizontalTextAlignment="End" FontSize="Micro"/>
+                        
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

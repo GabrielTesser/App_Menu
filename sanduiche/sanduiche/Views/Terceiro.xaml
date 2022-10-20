@@ -1,12 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="sanduiche.Views.Terceiro">
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="sanduiche.Views.Terceiro"
+             BackgroundColor="#3E474C"
+             Title="Diciplinas do Terceiro Ano">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <ScrollView>
+                    <StackLayout>
+                        <Frame Scale="0.7" CornerRadius="10">
+                            <StackLayout>
+                                <Image x:Name="logo_etec"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame CornerRadius="10" ScaleX="0.9">
+                            <StackLayout>
+
+                                <Label Text="DISCIPLINAS" TextColor="#3E474C" FontSize="32.5" HorizontalTextAlignment="Center"/>
+
+                                <Button Text="Segurança de Sistemas de Informação" Clicked="Button_Clicked" Style="{StaticResource BotaoVermelho}"  CornerRadius="10" Scale="0.9"/>
+                                <Button Text="Programação de Aplicativos Mobile II" Clicked="Button_Clicked_1" Style="{StaticResource BotaoVermelho}"  CornerRadius="10" Scale="0.9"/>
+                                <Button Text="Programação Web III" Clicked="Button_Clicked_2" Style="{StaticResource BotaoVermelho}"  CornerRadius="10" Scale="0.9"/>
+                                <Button Text="Qualidade e Teste de Software" Clicked="Button_Clicked_3" Style="{StaticResource BotaoVermelho}"  CornerRadius="10" Scale="0.9"/>
+                                <Button Text="Desenvolvimento do Trabalho de Conclusão de Curso (TCC) em Desenvolvimento de Sistemas" Clicked="Button_Clicked_4" Style="{StaticResource BotaoVermelho}"  CornerRadius="10" Scale="0.9"/>
+                                <Label Text="Desenvolvido por Gabriel Tesser" Padding="0,20,0,0" TextColor="#3E474C" HorizontalTextAlignment="End" FontSize="Micro"/>
+                            </StackLayout>
+                        </Frame>
+
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
