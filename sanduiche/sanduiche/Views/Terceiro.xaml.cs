@@ -28,7 +28,7 @@ namespace sanduiche.Views
                 {
                     Nome = "Segurança de Sistemas de Informação",
                     AtribuicaoRespobilidade = "Implementar rotinas de segurança da informação.",
-                    ValoresAtitudes = "Estimular atitudes respeitosas. • Incentivar comportamentos éticos. • Desenvolver a criticidade.",
+                    ValoresAtitudes = "Estimular atitudes respeitosas.\n• Incentivar comportamentos éticos.\n• Desenvolver a criticidade.",
                 };
                 await Navigation.PushAsync(new VerComponente(c));
             }
@@ -46,7 +46,7 @@ namespace sanduiche.Views
                 {
                     Nome = "Programação de Aplicativos Mobile II",
                     AtribuicaoRespobilidade = "Documentar, construir e manter sistemas de informação para plataformas móveis.",
-                    ValoresAtitudes = "Responsabilizar-se pela produção, utilização e divulgação de informações. • Incentivar a criatividade. • Estimular a organização",
+                    ValoresAtitudes = "Responsabilizar-se pela produção, utilização e divulgação de informações.\n• Incentivar a criatividade.\n• Estimular a organização",
                 };
                 await Navigation.PushAsync(new VerComponente(c));
             }
@@ -64,7 +64,7 @@ namespace sanduiche.Views
                 {
                     Nome = "Programação Web III ",
                     AtribuicaoRespobilidade = "Documentar, construir e manter sistemas de informação para web ",
-                    ValoresAtitudes = "Responsabilizar-se pela produção, utilização e divulgação de informações. • Fortalecer a persistência e o interesse na resolução de situações-problema. • Incentivar a criatividade.",
+                    ValoresAtitudes = "Responsabilizar-se pela produção, utilização e divulgação de informações.\n• Fortalecer a persistência e o interesse na resolução de situações-problema.\n• Incentivar a criatividade.",
                 };
                 await Navigation.PushAsync(new VerComponente(c));
             }
@@ -81,8 +81,8 @@ namespace sanduiche.Views
                 var c = new Componente
                 {
                     Nome = "Qualidade e Teste de Software",
-                    AtribuicaoRespobilidade = "Testar softwares para melhoria da qualidade de sistemas. • Elaborar registros e planilhas de acompanhamento e controle das atividades.",
-                    ValoresAtitudes = "Responsabilizar-se pela produção, utilização e divulgação de informações. • Estimular a proatividade. • Desenvolver criticidade. • Incentivar comportamentos éticos",
+                    AtribuicaoRespobilidade = "Testar softwares para melhoria da qualidade de sistemas.\n• Elaborar registros e planilhas de acompanhamento e controle das atividades.",
+                    ValoresAtitudes = "Responsabilizar-se pela produção, utilização e divulgação de informações.\n• Estimular a proatividade.\n• Desenvolver criticidade.\n• Incentivar comportamentos éticos",
                 };
                 await Navigation.PushAsync(new VerComponente(c));
             }
@@ -100,7 +100,7 @@ namespace sanduiche.Views
                 {
                     Nome = "Desenvolvimento do Trabalho de Conclusão de Curso (TCC)",
                     AtribuicaoRespobilidade = "Planejar e desenvolver projetos de sistemas computacionais",
-                    ValoresAtitudes = "Planejar ações mais eficazes no desenvolvimento de sistemas. • Demonstrar comprometimento com equipe e o trabalho",
+                    ValoresAtitudes = "Planejar ações mais eficazes no desenvolvimento de sistemas.\n• Demonstrar comprometimento com equipe e o trabalho",
                 };
                 await Navigation.PushAsync(new VerComponente(c));
             }

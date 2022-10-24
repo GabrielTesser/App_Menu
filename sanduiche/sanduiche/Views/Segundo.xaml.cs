@@ -28,7 +28,7 @@ namespace sanduiche.Views
                 {
                     Nome = "Banco de Dados II",
                     AtribuicaoRespobilidade = "Implementar banco de dados.",
-                    ValoresAtitudes = "Incentivar a criatividade. • Desenvolver a criticidade. • Fortalecer a persistência e o interesse na resolução de situações-problema",
+                    ValoresAtitudes = "Incentivar a criatividade.\n• Desenvolver a criticidade.\n• Fortalecer a persistência e o interesse na resolução de situações-problema",
                 };
                 await Navigation.PushAsync(new VerComponente(c));
             }
@@ -46,7 +46,7 @@ namespace sanduiche.Views
                 {
                     Nome = "Desenvolvimento de Sistemas",
                     AtribuicaoRespobilidade = "Analisar e projetar sistemas de informação, selecionando linguagens de programação e ambientes de desenvolvimento de acordo com as especificidades do projeto. • Codificar e depurar programas.",
-                    ValoresAtitudes = "Fortalecer a persistência e o interesse na resolução de situações-problema. • Incentivar ações que promovam a cooperação. • Desenvolver a criatividade.",
+                    ValoresAtitudes = "Fortalecer a persistência e o interesse na resolução de situações-problema.\n• Incentivar ações que promovam a cooperação.\n• Desenvolver a criatividade.",
                 };
                 await Navigation.PushAsync(new VerComponente(c));
             }
@@ -64,7 +64,7 @@ namespace sanduiche.Views
                 {
                     Nome = "Ética e Cidadania Organizacional",
                     AtribuicaoRespobilidade = "Atuar de acordo com princípios éticos nas relações de trabalho.",
-                    ValoresAtitudes = "Estimular atitudes respeitosas. • Incentivar comportamentos éticos. • Comprometer-se com a igualdade de direitos.",
+                    ValoresAtitudes = "Estimular atitudes respeitosas.\n• Incentivar comportamentos éticos.\n• Comprometer-se com a igualdade de direitos.",
                 };
                 await Navigation.PushAsync(new VerComponente(c));
             }
@@ -82,7 +82,7 @@ namespace sanduiche.Views
                 {
                     Nome = "Programação de Aplicativos Mobile I ",
                     AtribuicaoRespobilidade = "Elaborar projetos de aplicativos para plataformas móveis.",
-                    ValoresAtitudes = "Incentivar a criatividade. • Responsabilizar-se pela produção, utilização e divulgação de informações. • Estimular a organização.",
+                    ValoresAtitudes = "Incentivar a criatividade.\n• Responsabilizar-se pela produção, utilização e divulgação de informações.\n• Estimular a organização.",
                 };
                 await Navigation.PushAsync(new VerComponente(c));
             }
@@ -100,7 +100,7 @@ namespace sanduiche.Views
                 {
                     Nome = "Programação Web II",
                     AtribuicaoRespobilidade = "Planejar projetos de sistemas de informação para web",
-                    ValoresAtitudes = "Responsabilizar-se pela produção, utilização e divulgação de informações. • Fortalecer a persistência e o interesse na resolução de situações-problema. • Incentivar a criatividade.",
+                    ValoresAtitudes = "Responsabilizar-se pela produção, utilização e divulgação de informações.\n• Fortalecer a persistência e o interesse na resolução de situações-problema.\n• Incentivar a criatividade.",
                 };
                 await Navigation.PushAsync(new VerComponente(c));
             }
@@ -118,7 +118,7 @@ namespace sanduiche.Views
                 {
                     Nome = "Sistemas Embarcados",
                     AtribuicaoRespobilidade = "Desenvolver sistemas embarcados.",
-                    ValoresAtitudes = "Fortalecer a persistência e o interesse na resolução de situações-problema. • Estimular a organização. • Incentivar a criatividade.",
+                    ValoresAtitudes = "Fortalecer a persistência e o interesse na resolução de situações-problema.\n• Estimular a organização.\n• Incentivar a criatividade.",
                 };
                 await Navigation.PushAsync(new VerComponente(c));
             }

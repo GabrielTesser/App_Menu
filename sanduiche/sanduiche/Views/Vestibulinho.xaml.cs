@@ -16,6 +16,7 @@ namespace sanduiche.Views
         {
             InitializeComponent();
             logo_etec.Source = ImageSource.FromResource("sanduiche.imagens.etec-2022.png");
+            cps.Source = ImageSource.FromResource("sanduiche.imagens.cps.png");
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

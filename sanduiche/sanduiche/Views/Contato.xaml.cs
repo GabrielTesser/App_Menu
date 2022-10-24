@@ -16,6 +16,13 @@ namespace sanduiche.Views
         {
             InitializeComponent();
             logo_etec.Source = ImageSource.FromResource("sanduiche.imagens.etec-2022.png");
+            joaquim.Source = ImageSource.FromResource("sanduiche.imagens.joaquim.jpg");
+
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("tel: +55 (14) 3622-3566"));
         }
     }
 }

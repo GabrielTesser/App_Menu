@@ -9,13 +9,15 @@
              Title="Detalhes de Componenete">
             
     <ContentPage.Content>
-        <ScrollView>
+       
 
             <StackLayout>
 
                 <Frame Scale="0.8" CornerRadius="10">
                     <Image x:Name="logo_etec"/>
                 </Frame>
+
+            <ScrollView> 
 
                 <Frame Scale="0.9" CornerRadius="10">
                     <StackLayout VerticalOptions="Center" Padding="20">
@@ -25,23 +27,28 @@
                         <Label Text="Atribuição de responsabilidade" HorizontalTextAlignment="Center" FontAttributes="Bold" Margin="0, 0, 0, 30"
                                TextColor="#AB0209" FontSize="Large"/>
 
-                        <Label Text="{Binding AtribuicaoRespobilidade}" HorizontalTextAlignment="Center" FontAttributes="Bold" Margin="0, 0, 0, 30"
-                               TextColor="#3E474C" FontSize="Medium"/>
+                        <Frame Scale="0.9" CornerRadius="10" Padding="0, 0, 0, 10" BackgroundColor="#3E474C">
+                            <Label Text="{Binding AtribuicaoRespobilidade}" Padding="0, 20, 0, -5" HorizontalTextAlignment="Center" FontAttributes="Bold" Margin="0, 0, 0, 30"
+                                   TextColor="White" FontSize="Medium"/>
+                        </Frame>
 
                         <Label Text="Valores e Atitudes" HorizontalTextAlignment="Center" FontAttributes="Bold" Margin="0, 0, 0, 30"
                                TextColor="#AB0209" FontSize="Large"/>
 
-                        <Label Text="{Binding ValoresAtitudes}" HorizontalTextAlignment="Center" FontAttributes="Bold" Margin="0, 0, 0, 30"
-                               TextColor="#3E474C" FontSize="Medium"/>
-                        
+                        <Frame Scale="0.9" CornerRadius="10" Padding="0, 0, 0, 10" BackgroundColor="#3E474C">
+                            <Label Text="{Binding ValoresAtitudes}" Padding="0, 20, 0, -5" HorizontalTextAlignment="Center" FontAttributes="Bold" Margin="0, 0, 0, 30"
+                                   TextColor="White" FontSize="Medium"/>
+                        </Frame>
+
                         <Label Text="Desenvolvido por Gabriel Tesser" Padding="0,20,0,0" TextColor="#3E474C" HorizontalTextAlignment="End" FontSize="Micro"/>
                     </StackLayout>
 
                 </Frame>
+            </ScrollView>
 
-            </StackLayout>
+        </StackLayout>
 
-        </ScrollView>
+        
             
     </ContentPage.Content>
 </ContentPage>

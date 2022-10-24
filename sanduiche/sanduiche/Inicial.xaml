@@ -10,12 +10,10 @@
     <ContentPage.Content>
 
         <StackLayout Padding="10">
-            
-                <Frame Scale="0.7" CornerRadius="10">
-                    <StackLayout>
-                        <Image x:Name="logo_etec"/>
-                    </StackLayout>
-                </Frame>
+
+            <Frame Scale="0.8" CornerRadius="10">
+                 <Image x:Name="logo_etec" Aspect="AspectFill"/>
+            </Frame>
 
             <Frame Scale="0.9" CornerRadius="10">
                 <StackLayout Orientation="Vertical">
@@ -23,7 +21,7 @@
 
                     <Frame CornerRadius="10" BackgroundColor="#3E474C">
                         <StackLayout>
-                            <Image x:Name="logo_ds" Aspect="AspectFill"/>
+                            <Image x:Name="geral" Scale="1.5" Aspect="AspectFill"/>
                         </StackLayout>
                     </Frame>
 

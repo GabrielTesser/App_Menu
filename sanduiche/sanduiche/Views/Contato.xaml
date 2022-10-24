@@ -5,26 +5,40 @@
              BackgroundColor="#3E474C"
              Title="Contato">
     <ContentPage.Content>
-    <StackLayout>
+       
+             <StackLayout>
+          
 
-            <Frame Scale="0.8" CornerRadius="10">
-                <Image x:Name="logo_etec"/>
-            </Frame>
-        <Frame Scale="0.9" CornerRadius="10">
-            <StackLayout >
-                <Label Text="ETEC Joaquim Ferreira do Amaral" TextColor="#3E474C" FontSize="Title" HorizontalTextAlignment="Center" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Frame Scale="0.8" CornerRadius="10">
+                        <Image x:Name="logo_etec"/>
+                    </Frame>
+            <ScrollView>
+                <Frame Scale="0.9" CornerRadius="10">
+                        <StackLayout Padding="10" >
+                            <Label Text="ETEC Joaquim Ferreira do Amaral" TextColor="#3E474C" FontSize="Title" HorizontalTextAlignment="Center" FontAttributes="Bold" HorizontalOptions="Center"/>
 
-                    <Label Text="R. Humaitá, 1090 - Centro - CEP: 17201-320 - Jaú/SP" TextColor="#3E474C" HorizontalTextAlignment="Center" FontSize="Medium"/>
+                            <Label Text="Endereço" FontAttributes="Bold" Padding="0, 20, 0, 0" TextColor="#AB0209" HorizontalOptions="Center" FontSize="Title" />
 
-                    <Label Text=" (14) 3622-3566 / 3624-8585" TextColor="#3E474C" HorizontalOptions="Center" FontSize="Medium"/>
+                            <Label Text="R. Humaitá, 1090 - Centro - CEP: 17201-320 - Jaú/SP" TextColor="#3E474C" HorizontalTextAlignment="Center" FontSize="Medium"/>
 
-                    <Label Text="e070dir@cps.sp.gov.br" HorizontalOptions="CenterAndExpand" TextColor="#3E474C" FontSize="Medium"/>
+                            <Button Text=" (14) 3622-3566 / 3624-8585" Clicked="Button_Clicked" Style="{StaticResource BotaoVermelho}"/>
 
-                <Label Text="Desenvolvido por Gabriel Tesser" Padding="0,20,0,0" TextColor="#3E474C" HorizontalTextAlignment="End" FontSize="Micro"/>
+                            <Label Text="Email" TextColor="#AB0209" Padding="0, 20, 0, 0" FontAttributes="Bold" HorizontalOptions="Center" FontSize="Title" />
 
-             </StackLayout>
-        </Frame>
-    </StackLayout>
+                            <Label Text="e070dir@cps.sp.gov.br" HorizontalOptions="CenterAndExpand" TextColor="#3E474C" FontSize="Medium"/>
+
+                            <Frame BackgroundColor="#3E474C" CornerRadius="10" Scale="0.9">
+                                <Image x:Name="joaquim" Scale="1.2" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" />
+                            </Frame>
+
+                            <Label Text="Desenvolvido por Gabriel Tesser" Padding="0,20,0,0" TextColor="#3E474C" HorizontalTextAlignment="End" FontSize="Micro"/>
+
+                        </StackLayout>
+                    </Frame>
+            </ScrollView>
+                 
+        </StackLayout>
+       
 
     </ContentPage.Content>
 </ContentPage>

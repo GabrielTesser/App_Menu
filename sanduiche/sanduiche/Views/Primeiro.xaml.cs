@@ -28,7 +28,7 @@ namespace sanduiche.Views
                 {
                     Nome = "Analise de Sistemas",
                     AtribuicaoRespobilidade = "Elabora Projetos de Sistema de Informatica",
-                    ValoresAtitudes = "Estimular a Organização, * Incentivar a Criatividade, * Fortalecer a Percistencia e o Interesse por Situações Problemas",
+                    ValoresAtitudes = "Estimular a Organização,\n* Incentivar a Criatividade,\n* Fortalecer a Percistencia e o Interesse por Situações Problemas",
                 };
                 await Navigation.PushAsync(new VerComponente(c));
             }
@@ -47,7 +47,7 @@ namespace sanduiche.Views
                 {
                     Nome = "Banco de Dados I",
                     AtribuicaoRespobilidade = "Modelar Banco de Dados",
-                    ValoresAtitudes = "Estimular a Organização, * Fortalecer a Percistencia e o Interesse por Situações Problemas, * Promover Ações que Considerem o Respeito as Normas Estabelecidas",
+                    ValoresAtitudes = "Estimular a Organização,\n* Fortalecer a Percistencia e o Interesse por Situações Problemas,\n* Promover Ações que Considerem o Respeito as Normas Estabelecidas",
                 };
                 await Navigation.PushAsync(new VerComponente(c));
             }
@@ -66,7 +66,7 @@ namespace sanduiche.Views
                 {
                     Nome = "Design Digital",
                     AtribuicaoRespobilidade = "Desenvolver Elementos Gráficos para Aplicativos e Sites",
-                    ValoresAtitudes = " Incentivar a Criatividade, * Respeitar Manifestações Culturais de Outros Povos, * Incentivar Acções que Promovam a Cooperação",
+                    ValoresAtitudes = " Incentivar a Criatividade,\n* Respeitar Manifestações Culturais de Outros Povos,\n* Incentivar Acções que Promovam a Cooperação",
                 };
                 await Navigation.PushAsync(new VerComponente(c));
             }
@@ -85,7 +85,7 @@ namespace sanduiche.Views
                 {
                     Nome = "Fundamentos da Informatica",
                     AtribuicaoRespobilidade = "Operara Sistemas Computacionais",
-                    ValoresAtitudes = "Desenvolver a Criticidade, * Incentivar Comportamatos Éticos, * Promover Ações que Considerem o Respeito as Normas Estabelecidas",
+                    ValoresAtitudes = "Desenvolver a Criticidade,\n* Incentivar Comportamatos Éticos,\n* Promover Ações que Considerem o Respeito as Normas Estabelecidas",
                 };
                 await Navigation.PushAsync(new VerComponente(c));
             }
@@ -104,7 +104,7 @@ namespace sanduiche.Views
                 {
                     Nome = "Programação Web I",
                     AtribuicaoRespobilidade = "Desenvolver Sites para Web",
-                    ValoresAtitudes = "Incentivar a Criatividade,*Estimular a Organização, * Fortalecer a Percistencia e o Interesse por Situações Problemas",
+                    ValoresAtitudes = "Incentivar a Criatividade,\n*Estimular a Organização,\n* Fortalecer a Percistencia e o Interesse por Situações Problemas",
                 };
                 await Navigation.PushAsync(new VerComponente(c));
             }
@@ -123,7 +123,7 @@ namespace sanduiche.Views
                 {
                     Nome = "Programação de Algoritimo ",
                     AtribuicaoRespobilidade = "Implementar Algoritimos em Liguagem de Programação, Utilizando Ambiente de Desenvolvimento de Acordo com Necessidade ",
-                    ValoresAtitudes = "Estimular a Organização, * Incentivar Atitudes Autonomas, * Fortalecer a Percistencia e o Interesse por Situações Problemas",
+                    ValoresAtitudes = "Estimular a Organização,\n* Incentivar Atitudes Autonomas,\n* Fortalecer a Percistencia e o Interesse por Situações Problemas",
                 };
                 await Navigation.PushAsync(new VerComponente(c));
             }

@@ -11,18 +11,27 @@
                     <RowDefinition Height="160"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <StackLayout Grid.Row="0" BackgroundColor="White" Padding="10" Margin="10" HorizontalOptions="FillAndExpand">
-                    <Image x:Name="logo_etec" Scale="0.85" Aspect="AspectFill"/>
+                
+                <StackLayout Grid.Row="0" VerticalOptions="StartAndExpand" BackgroundColor="#3E474C" HorizontalOptions="FillAndExpand">
+                    <Frame Scale="0.9" Padding="0, 0, 0, 20" CornerRadius="10">
+                        <Image x:Name="logo_etec" Scale="0.85" Aspect="AspectFill"/>
+                    </Frame>
                 </StackLayout>
 
-                <StackLayout Grid.Row="1" Spacing="10" Margin="10" Padding="10" BackgroundColor="#F3F2F0">
-                    <Button Text="Inicial" Clicked="Open_Inicial" Style="{StaticResource BotaoVermelho}"/>
-                    <Button Text="Primeiro" Clicked="Open_Primeiro" Style="{StaticResource BotaoCinza}"/>
-                    <Button Text="Segundo" Clicked="Open_Segundo" Style="{StaticResource BotaoCinza}"/>
-                    <Button Text="Terceiro" Clicked="Open_Terceiro" Style="{StaticResource BotaoCinza}"/>
-                    <Button Text="Vestibulinho" Clicked="Open_Vestibulinho" Style="{StaticResource BotaoVermelho}"/>
-                    <Button Text="Contato" Clicked="Open_Contato" Style="{StaticResource BotaoVermelho}"/>
+
+                <StackLayout Padding="0,20,0,0" Grid.Row="1" Spacing="10" Margin="10" BackgroundColor="#3E474C">
+                    <Frame Scale="0.9" CornerRadius="10">
+                        <StackLayout>
+                            <Button Text="Inicial" Clicked="Open_Inicial" Style="{StaticResource BotaoVermelho}"/>
+                            <Button Text="Primeiro" Clicked="Open_Primeiro" Style="{StaticResource BotaoCinza}"/>
+                            <Button Text="Segundo" Clicked="Open_Segundo" Style="{StaticResource BotaoCinza}"/>
+                            <Button Text="Terceiro" Clicked="Open_Terceiro" Style="{StaticResource BotaoCinza}"/>
+                            <Button Text="Vestibulinho" Clicked="Open_Vestibulinho" Style="{StaticResource BotaoVermelho}"/>
+                            <Button Text="Contato" Clicked="Open_Contato" Style="{StaticResource BotaoVermelho}"/>
+                        </StackLayout>
+                    </Frame>
                 </StackLayout>
+                
             </Grid>
         </ContentPage>
     </MasterDetailPage.Master>

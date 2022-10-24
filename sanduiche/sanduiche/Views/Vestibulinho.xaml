@@ -16,13 +16,18 @@
                 </StackLayout>
             </Frame>
 
-            <Frame CornerRadius="10" Scale="0.9">
+            <Frame VerticalOptions="Center" CornerRadius="10" Scale="0.9">
                 <StackLayout>
-                    <Label Text="Fique atento as datas, acesse o site abaixo" FontSize="Title" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                    <Label Padding="0, 0, 0, 20" Text="Fique atento as datas, acesse o site abaixo" HorizontalTextAlignment="Center" FontSize="Title" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="#3E474C"/>
 
                     <Button Text="Site da ETEC Jahu" Style="{StaticResource BotaoVermelho}" Clicked="Button_Clicked"/>
+
+                    <Frame CornerRadius="10" Padding="0, 20, 0, 0" Scale="0.9">
+                        <Image Scale="0.9" VerticalOptions="Center" x:Name="cps"/>
+                    </Frame>
+                    
                     <Label Text="Desenvolvido por Gabriel Tesser" Padding="0,20,0,0" TextColor="#3E474C" HorizontalTextAlignment="End" FontSize="Micro"/>
-                        
+
                 </StackLayout>
             </Frame>
         </StackLayout>

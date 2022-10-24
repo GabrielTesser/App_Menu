@@ -16,7 +16,7 @@ namespace sanduiche
         {
             InitializeComponent();
 
-            logo_ds.Source = ImageSource.FromResource("sanduiche.imagens.download.jpg");
+            geral.Source = ImageSource.FromResource("sanduiche.imagens.geral.jpg");
             logo_etec.Source = ImageSource.FromResource("sanduiche.imagens.etec-2022.png");
         }
     }
